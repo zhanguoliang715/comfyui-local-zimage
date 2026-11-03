@@ -1,5 +1,8 @@
 # comfyui-local-zimage
 
+<p align="right">[简体中文](README.md) | [English](README.en.md)</p>
+
+
 **在 Windows 本机用 ComfyUI 免费出图，不按张付钱。这个技能专治三个卡点：装不上、下不动、显存爆。**
 
 ![License](https://img.shields.io/badge/license-MIT-yellow)
