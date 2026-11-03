@@ -1,0 +1,21 @@
+{
+  "name": "comfyui-local-zimage",
+  "owner": {
+    "name": "zhanguoliang715"
+  },
+  "metadata": {
+    "description": "Windows 本机 ComfyUI 免费出图：模型分段下载、8GB 显存降级、img2img 锁脸、剧本到 MP4",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "comfyui-local-zimage",
+      "description": "在 Windows 本机用 ComfyUI 免费出图，专治装不上、下不动、显存爆",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./"
+      ]
+    }
+  ]
+}

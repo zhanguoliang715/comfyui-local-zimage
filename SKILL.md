@@ -1,5 +1,6 @@
 ---
 name: comfyui-local-zimage
+license: MIT
 description: 在 Windows 本机用 ComfyUI 做本地免费 AI 出图（文生图/图生图），含多镜头故事板的角色/风格一致性方案（设定稿 + img2img 锁脸），以及「剧本→分镜图→MP4 成片」流水线。面向 RTX 50 系 Blackwell 显卡 + 8GB 显存，覆盖代理分段下载、NVFP4 量化模型选型、Z-Image-Turbo 工作流与 API 批量出图。触发词：ComfyUI、本地出图、文生图、图生图、角色一致性、锁脸、Z-Image、AI 绘画、节点式工作流、部署 Stable Diffusion、剧本转视频。
 ---
 
