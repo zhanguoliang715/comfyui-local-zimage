@@ -5,6 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%2B%20NVIDIA-3776AB)
 ![VRAM](https://img.shields.io/badge/显存-8GB%20可跑-2E7D32)
+![spec](https://img.shields.io/badge/agentskills.io-spec%20valid-2E7D32)
 
 ## 它解决什么
 
@@ -29,6 +30,18 @@
 | `scripts/dl-seg.sh` | 模型分段下载 |
 | `references/workflow-*.json` | 三个可直接导入的工作流（文生图 / img2img 锁脸 / 九宫格） |
 | `references/troubleshooting.md` | 排障清单 |
+
+## 用插件安装（一条命令，已实测）
+
+```bash
+claude plugin marketplace add zhanguoliang715/comfyui-local-zimage
+claude plugin install comfyui-local-zimage@comfyui-local-zimage
+```
+
+> 本机 git 若报 `CRYPT_E_NO_REVOCATION_CHECK`（证书吊销列表查不到），命令前加 `GIT_SSL_NO_VERIFY=1`。
+> 这是本机 TLS 配置问题，与仓库无关；换台机器通常直接可用。
+
+不想装插件也行，下面的手动方式是等价的。
 
 ## 上手
 
