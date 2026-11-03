@@ -31,17 +31,39 @@
 | `references/workflow-*.json` | 三个可直接导入的工作流（文生图 / img2img 锁脸 / 九宫格） |
 | `references/troubleshooting.md` | 排障清单 |
 
-## 用插件安装（一条命令，已实测）
+## 安装（三种方式，按推荐顺序）
+
+### 1. 一条命令装进所有 Agent（推荐，已实测）
+
+```bash
+npx skills add zhanguoliang715/comfyui-local-zimage
+```
+
+装好后会同时挂到 Codex、Cursor、Amp、Antigravity、Claude Code 等 20+ 个 Agent 上，不用逐个配。
+
+### 2. 作为 Claude Code 插件（已实测）
 
 ```bash
 claude plugin marketplace add zhanguoliang715/comfyui-local-zimage
 claude plugin install comfyui-local-zimage@comfyui-local-zimage
 ```
 
-> 本机 git 若报 `CRYPT_E_NO_REVOCATION_CHECK`（证书吊销列表查不到），命令前加 `GIT_SSL_NO_VERIFY=1`。
-> 这是本机 TLS 配置问题，与仓库无关；换台机器通常直接可用。
+### 3. 手动拷目录
 
-不想装插件也行，下面的手动方式是等价的。
+```bash
+git clone https://github.com/zhanguoliang715/comfyui-local-zimage.git
+```
+
+> **本机 git 报 `CRYPT_E_NO_REVOCATION_CHECK` 时**（证书吊销列表查不到），在命令前加 `GIT_SSL_NO_VERIFY=1`。
+> 这是本机 TLS 配置问题，与仓库无关，换台机器通常直接可用。
+
+## English
+
+Local, free image generation on Windows with ComfyUI: segmented model downloads, 8GB VRAM fallbacks, img2img face locking, storyboard to MP4.
+
+```bash
+npx skills add zhanguoliang715/comfyui-local-zimage
+```
 
 ## 上手
 
